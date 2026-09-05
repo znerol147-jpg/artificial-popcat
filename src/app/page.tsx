@@ -187,7 +187,7 @@ const Hero = () => {
                 Buy Now <ChevronRight className="group-hover:translate-x-1 transition-transform" />
               </button>
               <a
-                href="https://twitter.com/placeholder"
+                href="https://x.com/artificiaPopcat"
                 target="_blank"
                 rel="noreferrer"
                 className="border border-white/20 bg-white/5 hover:bg-white/10 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 backdrop-blur-sm"
@@ -314,8 +314,8 @@ const About = () => {
 
 const Tokenomics = () => {
   const stats = [
-    { title: "Total Supply", value: "[TBA]", label: "Tokens minted" },
-    { title: "Buy/Sell Tax", value: "0%", label: "Zero friction" },
+    { title: "Total Supply", value: "1B", label: "Tokens minted" },
+    { title: "Buy/Sell Tax", value: "1%", label: "Zero friction" },
     { title: "Liquidity", value: "Burned", label: "Forever locked" }
   ];
 
@@ -454,7 +454,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-4 md:justify-end">
             <a
-              href="#"
+              href="https://x.com/artificiaPopcat"
               aria-label="X profile"
               className="bg-dark-surface border border-white/10 p-3 rounded-xl hover:bg-neon hover:text-black hover:border-neon transition-all"
             >
