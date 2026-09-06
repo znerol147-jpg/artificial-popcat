@@ -130,7 +130,7 @@ const Hero = () => {
             <button className="bg-white text-black px-8 py-4 rounded-xl font-black text-xl brutal-box flex items-center justify-center gap-2">
               Trade RH <ArrowRight strokeWidth={4} />
             </button>
-            <a href="https://x.com/placeholder" target="_blank" rel="noreferrer" className="bg-black text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl font-black text-xl brutal-box flex items-center justify-center gap-2">
+            <a href="https://t.me/+9CRTKI5EaEdkYmQ1" target="_blank" rel="noreferrer" className="bg-black text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl font-black text-xl brutal-box flex items-center justify-center gap-2">
               <XLogo size={24} /> Raid X
             </a>
           </motion.div>
