@@ -128,7 +128,7 @@ const Hero = () => {
               <button className="bg-white text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-neon transition-all hover:shadow-[0_0_30px_rgba(57,255,20,0.6)] flex items-center justify-center gap-2 group">
                 Buy $NYANCAT <Rocket className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" size={20}/>
               </button>
-              <a href="https://x.com/placeholder" target="_blank" rel="noreferrer" className="border border-white/20 bg-white/5 hover:bg-nyan-pink hover:text-black hover:border-nyan-pink px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 backdrop-blur-sm group">
+              <a href="https://x.com/nyancatai" target="_blank" rel="noreferrer" className="border border-white/20 bg-white/5 hover:bg-nyan-pink hover:text-black hover:border-nyan-pink px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 backdrop-blur-sm group">
                 <XLogo size={20} /> Join the Raid
               </a>
             </motion.div>
@@ -217,8 +217,8 @@ const Tokenomics = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { title: "Total Supply", value: "[TBA]", label: "Pop-tarts baked" },
-            { title: "Buy/Sell Tax", value: "0%", label: "Zero friction" },
+            { title: "Total Supply", value: "1B", label: "Pop-tarts baked" },
+            { title: "Buy/Sell Tax", value: "1%", label: "Zero friction" },
             { title: "Liquidity", value: "Burned", label: "Forever locked" }
           ].map((stat, idx) => (
             <motion.div 
@@ -305,10 +305,10 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex gap-4 md:justify-end">
-            <a href="#" className="bg-dark-surface border border-white/10 p-3 rounded-xl hover:bg-nyan-pink hover:text-black hover:border-nyan-pink transition-all">
+            <a href="https://x.com/nyancatai" className="bg-dark-surface border border-white/10 p-3 rounded-xl hover:bg-nyan-pink hover:text-black hover:border-nyan-pink transition-all">
               <XLogo size={24} />
             </a>
-            <a href="#" className="bg-dark-surface border border-white/10 p-3 rounded-xl hover:bg-neon hover:text-black hover:border-neon transition-all">
+            <a href="https://t.me/ArtificialNyancat" className="bg-dark-surface border border-white/10 p-3 rounded-xl hover:bg-neon hover:text-black hover:border-neon transition-all">
               <Send size={24} />
             </a>
           </div>
