@@ -5,16 +5,20 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ARTIFICIAL POPCAT ($POPCAT) | The AI Upgraded Meme",
-  description: "ARTIFICIAL POPCAT is what happens when the internet's most iconic screaming cat gets upgraded with AI and dropped into the Robinhood ecosystem.",
+  title: "Artificial Nyancat ($NYANCAT) | Loop Forever",
+  description: "The classic Pop-Tart Cat upgraded with glowing green AI eyes and an endless rainbow drive.",
+  icons: {
+    icon: "/nyancat.jpg", // Setting the favicon directly to your image
+    apple: "/nyancat.jpg",
+  },
   openGraph: {
-    title: "ARTIFICIAL POPCAT ($POPCAT)",
-    description: "Neon green eyes. Zero fear. Maximum memes. Built for the Robinhood launch meta.",
-    url: "https://artificialpopcat.com", // Placeholder
-    siteName: "Artificial Popcat",
+    title: "Artificial Nyancat ($NYANCAT)",
+    description: "Dogs had their run. Frogs had theirs. The sky belongs to $NYANCAT.",
+    url: "https://artificialnyancat.com", // Placeholder
+    siteName: "Artificial Nyancat",
     images: [
       {
-        url: "/popcat.jpg", // Ensure image is in public folder
+        url: "/nyancat.jpg",
         width: 1200,
         height: 630,
       },
@@ -24,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ARTIFICIAL POPCAT ($POPCAT)",
-    description: "It doesn't meow. It pumps.",
-    images: ["/popcat.jpg"],
+    title: "Artificial Nyancat ($NYANCAT)",
+    description: "Loop forever. Fly forever.",
+    images: ["/nyancat.jpg"],
   },
 };
 
