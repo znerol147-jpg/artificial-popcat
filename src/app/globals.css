@@ -1,65 +1,54 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sherwood: #195932;
-  --color-sherwood-dark: #0a2414;
-  --color-rob-green: #39FF14;
-  --color-gold: #F1C40F;
-  --color-gold-glow: rgba(241, 196, 15, 0.4);
+  --color-rub-green: #96F574; /* Matches the background of your image */
+  --color-rob-dark: #000000;
+  --color-paper: #ffffff;
   
-  --animate-float-slow: float-slow 6s ease-in-out infinite;
-  --animate-pulse-glow: pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-marquee: marquee 10s linear infinite;
+  --animate-bounce-slow: bounce-slow 3s infinite;
 }
 
 :root {
-  --foreground-rgb: 240, 240, 240;
-  --background-start-rgb: 10, 36, 20; /* Deep forest green */
-  --background-end-rgb: 5, 15, 10;
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 150, 245, 116;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+  background: rgb(var(--background-rgb));
   overflow-x: hidden;
   scroll-behavior: smooth;
-  min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Custom Gold/Green Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* Hard Comic-Book Shadows */
+.brutal-box {
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px 0px #000;
+  transition: all 0.2s ease-in-out;
 }
-::-webkit-scrollbar-track {
-  background: #0a2414; 
+
+.brutal-box:hover {
+  transform: translate(4px, 4px);
+  box-shadow: 4px 4px 0px 0px #000;
 }
-::-webkit-scrollbar-thumb {
-  background: #195932;
-  border-radius: 4px;
-  border: 1px solid rgba(241, 196, 15, 0.2);
+
+.brutal-text-shadow {
+  text-shadow: 3px 3px 0px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #F1C40F; 
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
 }
 
 ::selection {
-  background: #F1C40F;
-  color: #000;
-}
-
-/* Animations */
-@keyframes float-slow {
-  0%, 100% { transform: translateY(0) rotate(-1deg); }
-  50% { transform: translateY(-20px) rotate(2deg); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.05); }
-}
-
-.glass-panel {
-  background: rgba(25, 89, 50, 0.1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(241, 196, 15, 0.15);
+  background: #000;
+  color: #96F574;
 }
