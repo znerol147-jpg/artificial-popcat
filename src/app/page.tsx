@@ -91,7 +91,7 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const [copied, setCopied] = useState(false);
-  const contractAddress = "[CONTRACT_ADDRESS_PLACEHOLDER]";
+  const contractAddress = "0x0e561632151918cA0f83ad270D1b361F629517c6";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress);
