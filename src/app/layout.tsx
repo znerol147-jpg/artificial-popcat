@@ -5,22 +5,22 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Artificial Nyancat ($NYANCAT) | Loop Forever",
-  description: "The classic Pop-Tart Cat upgraded with glowing green AI eyes and an endless rainbow drive.",
+  title: "RUB ($RUB) | The Girl in the Green Hat",
+  description: "Meet RUB. The girl counterpart of ROB. The same Sherwood spirit, built for the Robinhood Chain.",
   icons: {
-    icon: "/nyancat.jpg", // Setting the favicon directly to your image
-    apple: "/nyancat.jpg",
+    icon: "/rub.jpg", // Pointing directly to your new image
+    apple: "/rub.jpg",
   },
   openGraph: {
-    title: "Artificial Nyancat ($NYANCAT)",
-    description: "Dogs had their run. Frogs had theirs. The sky belongs to $NYANCAT.",
-    url: "https://artificialnyancat.com", // Placeholder
-    siteName: "Artificial Nyancat",
+    title: "RUB ($RUB) | Robinhood Chain",
+    description: "Robin trades memes on Robinhood, stays on Robinhood, uses USDG. Be like Robin. Meet RUB.",
+    url: "https://rub-robinhood.com", // Placeholder
+    siteName: "RUB",
     images: [
       {
-        url: "/nyancat.jpg",
+        url: "/rub.jpg",
         width: 1200,
-        height: 630,
+        height: 1200,
       },
     ],
     locale: "en_US",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Artificial Nyancat ($NYANCAT)",
-    description: "Loop forever. Fly forever.",
-    images: ["/nyancat.jpg"],
+    title: "RUB ($RUB) | The Girl in the Green Hat",
+    description: "Bill is on Solana. Ben is on BNB. Robinhood needs its own guy, and girl.",
+    images: ["/rub.jpg"],
   },
 };
 

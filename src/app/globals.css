@@ -1,65 +1,65 @@
 @import "tailwindcss";
 
 @theme {
-  --color-neon: #39FF14;
-  --color-neon-glow: rgba(57, 255, 20, 0.5);
-  --color-nyan-pink: #ff88d9;
-  --color-dark: #05050a; /* Deep space blue-black */
-  --color-dark-surface: #111116;
+  --color-sherwood: #195932;
+  --color-sherwood-dark: #0a2414;
+  --color-rob-green: #39FF14;
+  --color-gold: #F1C40F;
+  --color-gold-glow: rgba(241, 196, 15, 0.4);
   
-  --animate-float: float 3s ease-in-out infinite;
-  --animate-rainbow-pan: rainbow-pan 4s linear infinite;
-  --animate-stars: stars 50s linear infinite;
+  --animate-float-slow: float-slow 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 5, 5, 10;
-  --background-end-rgb: 5, 5, 10;
+  --foreground-rgb: 240, 240, 240;
+  --background-start-rgb: 10, 36, 20; /* Deep forest green */
+  --background-end-rgb: 5, 15, 10;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
   overflow-x: hidden;
   scroll-behavior: smooth;
+  min-height: 100vh;
 }
 
-/* Custom Rainbow Scrollbar */
+/* Custom Gold/Green Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #05050a; 
+  background: #0a2414; 
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #6633cc);
+  background: #195932;
   border-radius: 4px;
+  border: 1px solid rgba(241, 196, 15, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F1C40F; 
 }
 
 ::selection {
-  background: #ff88d9;
-  color: #fff;
+  background: #F1C40F;
+  color: #000;
 }
 
 /* Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(2deg); }
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
 }
 
-@keyframes rainbow-pan {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 200% 50%; }
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
 }
 
-@keyframes stars {
-  from { transform: translateY(0); }
-  to { transform: translateY(-2000px); }
-}
-
-/* Helper for the rainbow text/borders */
-.rainbow-gradient {
-  background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #6633cc, #ff0000);
-  background-size: 200% auto;
+.glass-panel {
+  background: rgba(25, 89, 50, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(241, 196, 15, 0.15);
 }
