@@ -55,7 +55,7 @@ const Navbar = () => {
             className="absolute top-24 left-6 right-6 bg-[#0A1C10]/95 backdrop-blur-2xl border border-white/10 rounded-3xl p-6 flex flex-col gap-4 md:hidden"
           >
             {navLinks.map((link) => (
-              <a key={link} href={`#${link.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-lg font-medium text-white hover:text-[#6EE751]">
+              <a key={link} href={`https://t.me/KermitcoinRH${link.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-lg font-medium text-white hover:text-[#6EE751]">
                 {link}
               </a>
             ))}
@@ -320,7 +320,7 @@ const Footer = () => {
           <a href="https://x.com/KermitcoinRH" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-[#6EE751] hover:text-black transition-colors border border-white/10">
             <XLogo size={20} />
           </a>
-          <a href=" https://t.me/KermitcoinRH" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-[#6EE751] hover:text-black transition-colors border border-white/10">
+          <a href="https://t.me/KermitcoinRH" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-white/5 hover:bg-[#6EE751] hover:text-black transition-colors border border-white/10">
             <TelegramLogo size={20} />
           </a>
         </div>
