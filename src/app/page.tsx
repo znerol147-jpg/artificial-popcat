@@ -68,7 +68,7 @@ const Navbar = () => {
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "[CONTRACT_ADDRESS_PLACEHOLDER]";
+  const contractAddress = "0x5908C5E5314de6aDf1bF96979ecbb4BF84b93f74";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress);
