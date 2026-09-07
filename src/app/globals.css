@@ -1,54 +1,52 @@
 @import "tailwindcss";
 
 @theme {
-  --color-rub-green: #96F574; /* Matches the background of your image */
-  --color-rob-dark: #000000;
-  --color-paper: #ffffff;
+  --color-kermit: #6EE751;
+  --color-kermit-dark: #0A1C10;
+  --color-gold: #F1C40F;
   
-  --animate-marquee: marquee 10s linear infinite;
-  --animate-bounce-slow: bounce-slow 3s infinite;
+  --animate-fade-in: fadeIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 150, 245, 116;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 10, 28, 16;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  background: radial-gradient(circle at 50% 0%, #153a20 0%, #0a1c10 100%);
+  background-attachment: fixed;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Hard Comic-Book Shadows */
-.brutal-box {
-  border: 4px solid #000;
-  box-shadow: 8px 8px 0px 0px #000;
-  transition: all 0.2s ease-in-out;
-}
-
-.brutal-box:hover {
-  transform: translate(4px, 4px);
-  box-shadow: 4px 4px 0px 0px #000;
-}
-
-.brutal-text-shadow {
-  text-shadow: 3px 3px 0px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
-}
-
-@keyframes bounce-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
-
 ::selection {
-  background: #000;
-  color: #96F574;
+  background: #6EE751;
+  color: #000;
 }
+
+/* Premium Frosted Glass */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(110, 231, 81, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0A1C10; }
+::-webkit-scrollbar-thumb { background: #6EE751; border-radius: 10px; }
