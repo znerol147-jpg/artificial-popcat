@@ -169,9 +169,9 @@ const MemeGallery = () => {
   const [index, setIndex] = useState(0);
   
   const memes = [
-    "/kermitmeme_1.jpg", "/kermitmeme_2.jpg", "/kermitmeme_3.jpg",
-    "/kermitmeme_4.jpg", "/kermitmeme_5.jpg", "/kermitmeme_6.jpg",
-    "/kermitmeme_7.jpg", "/kermitmeme_8.jpg", "/kermitmeme_9.jpg"
+    "/kermitmeme_1.png", "/kermitmeme_2.png", "/kermitmeme_3.png",
+    "/kermitmeme_4.png", "/kermitmeme_5.png", "/kermitmeme_6.png",
+    "/kermitmeme_7.png", "/kermitmeme_8.png", "/kermitmeme_9.png"
   ];
 
   useEffect(() => {
